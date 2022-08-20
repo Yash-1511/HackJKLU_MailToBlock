@@ -1,0 +1,10 @@
+fastapi==0.79.1
+pydantic==1.9.2
+tensorflow==2.9.0
+uvicorn==0.18.2
+uvloop
+httptools
+scikit-learn
+numpy
+pandas
+gunicorn
