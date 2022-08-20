@@ -8,7 +8,7 @@ const Footer = () => {
                     <div className="a9 a1t ac[-16px]">
                         <div className="a8 lg:a1K/12 2xl:a1L/12 ae">
                             <div className="a1M">
-                                <a href="index.html" className="a1N a1O h-10 w-auto">
+                                <a href="/" className="a1N a1O h-10 w-auto">
                                     <img src={logo} alt="logo" className="ag a1P" />
                                 </a>
                                 <p className="aG a1g a1B">
@@ -22,28 +22,28 @@ const Footer = () => {
                                     Quick Links
                                 </h3>
                                 <div className="a9 a1t aa">
-                                    <a href="fd" className="
+                                    <a href="#home" className="
                     aG a1g
                     hover:aI
                     a1B a1T
                   ">
                                         Home
                                     </a>
-                                    <a href="fd" className="
+                                    <a href="#about" className="
                     aG a1g
                     hover:aI
                     a1B a1T
                   ">
                                         About us
                                     </a>
-                                    <a href="fd" className="
+                                    <a href="#features" className="
                     aG a1g
                     hover:aI
                     a1B a1T
                   ">
                                         Features
                                     </a>
-                                    <a href="fd" className="
+                                    <a href="#howto" className="
                     aG a1g
                     hover:aI
                     a1B

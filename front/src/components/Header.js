@@ -21,7 +21,7 @@ const navStyle = {
 const solutions = [
     {
         name: 'Home',
-        href: '/',
+        href: '#home',
         icon: ChartBarIcon,
     },
     {
@@ -60,7 +60,7 @@ export default function Header() {
                         <a href="af">
                             <span className="sr-only">Mail Block</span>
                            <div className=""> <img
-                           className="h-14 w-auto sm:h-20"
+                           className="h-16 w-full sm:h-16"
                            src={logo}
                            alt="logo"
                        /></div>

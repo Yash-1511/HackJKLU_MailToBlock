@@ -3,7 +3,6 @@ import { MailContext } from '../../../context/MailContext';
 import author from '../../../images/user-36-02.jpg';
 import { convertTodate } from "../../../Utils/converttime";
 import { shortenAddress } from "../../../Utils/shortenaddress";
-import ncodeRFC5987ValueChars from "../../../Utils/Utils/URLencoding/Encoder"
 import Skeleton from 'react-loading-skeleton'
 import 'react-loading-skeleton/dist/skeleton.css'
 
@@ -129,10 +128,10 @@ export default function Message() {
                     ">
                         {data.body}
                       </p>
-                      <div className="a8 a1b a2a a1E">{data.Filename}
+                      <div className="a8 a1b a2a a1E w-auto p-3">{data.Filename}
                       
-                      {<embed src={`https://${data.ipfsHash}.ipfs.dweb.link/${data.Filename}`} width="800px" height="500px" /> || <Skeleton />}
-                      </div>
+                      {<embed src={`https://${data.ipfsHash}.ipfs.dweb.link/${data.Filename}`} className="max-w-full mt-1" /> || <Skeleton />}
+                      </div>  
                     </div>
                   </div>
                 </div>

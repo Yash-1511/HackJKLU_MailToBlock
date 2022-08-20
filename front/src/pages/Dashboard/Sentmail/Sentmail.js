@@ -69,7 +69,10 @@ export const SentMail = () => {
                                 </div>
                               </td>
                               <td className="px-4 py-3 text-sm">
-                              {`${data.subject  + data.body.slice(0,40) +'...'}`}
+                              <span className='font-bold text-gray-700'>{data.subject} - </span>
+                              <span className='font-semibold text-gray-500'>
+                                {`${data.body.slice(0,40) + '...'}`}
+                              </span>
                               </td>
                               <td className="px-4 py-3 text-sm">
                                   {convertTodate(data.timestamp)}
