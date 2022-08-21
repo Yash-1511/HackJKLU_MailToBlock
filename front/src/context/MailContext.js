@@ -228,7 +228,7 @@ export function MailProvider({ children }) {
       let finaloutput = 0;
       for (let index = 0; index < data.length; index++) {
         const element = data[index].body;
-        let response = await axios.post("http://spamemails.herokuapp.com/predict",{
+        let response = await axios.post("https://spamemails.herokuapp.com/predict",{
             message:element
           })
         finaloutput = response.data.prediction;

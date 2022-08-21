@@ -6,7 +6,7 @@ import { MailContext } from '../../context/MailContext';
 import { useLocation, useNavigate } from 'react-router-dom';
 import { Inbox } from './Inbox/Inbox';
 import { SentMail } from './Sentmail/Sentmail';
-import  Message  from './Message/Message';
+import Message from './Message/Message';
 import Settings from './Settings';
 import ComposeMail from '../../components/ComposeMail';
 import { Spammail } from './Spammail/Spammail';
@@ -16,12 +16,12 @@ const Dashboard = () => {
     const [sidebarOpen, setSidebarOpen] = useState(false);
     const { appStatus } = useContext(MailContext);
     let navigate = useNavigate();
-    let location= useLocation();
+    let location = useLocation();
     return (
         <>
-         {
+            {
                 appStatus === "notConnected" && (
-                    navigate('/')         
+                    navigate('/')
                 )
             }
             {
@@ -40,15 +40,15 @@ const Dashboard = () => {
                             <div className="w-full max-w-9xl mx-auto">
 
                                 {/* banner */}
-                                {location.pathname==='/dashboard' && (<WelcomeBanner/>) }
-                                {location.pathname==='/dashboard/inbox' && (<Inbox/>) }
-                                {location.pathname==='/dashboard/sentMail' && (<SentMail/>) }
-                                {location.pathname==='/dashboard/spamMail' && (<Spammail/>) }
-                                {location.pathname==='/dashboard/settings' && (<Settings/>) }
-                                {location.pathname==='/dashboard/message/inboxMessage' && (<Message />) }
-                                {location.pathname==='/dashboard/message/sentMessage' && (<Message />) }
-                                {location.pathname==='/dashboard/message/spamMessage' && (<Message />) }
-                                {location.pathname==='/dashboard/compose' && (<Compose />) }
+                                {location.pathname === '/dashboard' && (<WelcomeBanner />)}
+                                {location.pathname === '/dashboard/inbox' && (<Inbox />)}
+                                {location.pathname === '/dashboard/sentMail' && (<SentMail />)}
+                                {location.pathname === '/dashboard/spamMail' && (<Spammail />)}
+                                {location.pathname === '/dashboard/settings' && (<Settings />)}
+                                {location.pathname === '/dashboard/message/inboxMessage' && (<Message />)}
+                                {location.pathname === '/dashboard/message/sentMessage' && (<Message />)}
+                                {location.pathname === '/dashboard/message/spamMessage' && (<Message />)}
+                                {location.pathname === '/dashboard/compose' && (<Compose />)}
 
                                 {/* Dashboard actions */}
                                 <div className="sm:flex sm:justify-between sm:items-center mb-8">
@@ -56,16 +56,14 @@ const Dashboard = () => {
                                 </div>
 
                                 {/* Cards */}
-                               
+
                             </div>
                         </main>
-                        <ComposeMail/>
+                        <ComposeMail />
                     </div>
                     {/* if user is not connected  */}
                 </div>)
             }
-           
-
         </>
     )
 }
