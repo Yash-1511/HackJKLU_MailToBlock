@@ -6,7 +6,7 @@ import userimage from "../../../images/user.png"
 import { shortenAddress } from '../../../Utils/shortenaddress';
 import { DuplicateIcon,GlobeAltIcon } from '@heroicons/react/outline'
 import copy from '../../../Utils/copyaddress';
-import toast, { Toaster } from "react-hot-toast";
+import { Toaster } from "react-hot-toast";
 
 const Settings = () => {
     const { currentAccount, appStatus,network,wrongNetwork,switchNetwork,balance } = useContext(MailContext);

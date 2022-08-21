@@ -1,7 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
 import { NavLink, useLocation } from 'react-router-dom';
-import logo from "../images/logo1.png";
-import SidebarLinkGroup from './SidebarLinkGroup';
 
 function Sidebar({
   sidebarOpen,

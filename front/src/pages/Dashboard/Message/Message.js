@@ -1,16 +1,14 @@
-import { useContext,useEffect,useState } from "react";
+import { useContext } from "react";
 import { MailContext } from '../../../context/MailContext';
 import author from '../../../images/user-36-02.jpg';
 import { convertTodate } from "../../../Utils/converttime";
 import { shortenAddress } from "../../../Utils/shortenaddress";
-import Skeleton from 'react-loading-skeleton'
-import 'react-loading-skeleton/dist/skeleton.css'
 
 export default function Message() {
   var a = window.location.href;
   const slug = a.substring(a.indexOf('?') + 1);
   const Checksentmail = a.search('sentMessage');
-  const Checkspammail = a.search('spamMessage');
+  // const Checkspammail = a.search('spamMessage');
   const Checkinboxmail = a.search('inboxMessage');
   console.log("this is mail format is :",Checkinboxmail);
   const { SentEmails,SpamMails,AllMails } = useContext(MailContext);
@@ -81,7 +79,7 @@ export default function Message() {
                             a1g
                             a2E
                           ">
-                              {sent==1 ? `To : ${shortenAddress(data.receiver)}` : shortenAddress(data.sender) }
+                              {sent===1 ? `To : ${shortenAddress(data.receiver)}` : shortenAddress(data.sender) }
                               
                             </h4>
                           </div>
@@ -130,7 +128,7 @@ export default function Message() {
                       </p>
                       <div className="a8 a1b a2a a1E w-auto p-3">{data.Filename}
                       
-                      {<embed src={`https://${data.ipfsHash}.ipfs.dweb.link/${data.Filename}`} className="max-w-full mt-1" /> || <Skeleton />}
+                      {<embed src={`https://${data.ipfsHash}.ipfs.dweb.link/${data.Filename}`} className="max-w-full mt-1" /> || <div>Please Wait for a moment...</div>}
                       </div>  
                     </div>
                   </div>

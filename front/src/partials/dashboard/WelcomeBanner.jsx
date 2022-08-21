@@ -2,8 +2,6 @@ import React, { useContext } from 'react';
 import { MailContext } from "../../context/MailContext"
 import { shortenAddress } from '../../Utils/shortenaddress';
 import polygon from "../../images/polygon.png"
-import { ethers } from 'ethers';
-import ethereum from "../../images/Ethereum.png"
 import error from "../../images/error.png"
 
 function WelcomeBanner() {

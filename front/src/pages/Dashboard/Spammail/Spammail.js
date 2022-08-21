@@ -3,7 +3,6 @@ import { useNavigate } from 'react-router-dom';
 import { MailContext } from '../../../context/MailContext';
 import { convertTodate } from '../../../Utils/converttime';
 import { shortenAddress } from '../../../Utils/shortenaddress';
-import Skeleton from 'react-loading-skeleton'
 import 'react-loading-skeleton/dist/skeleton.css'
 export const Spammail = () => {
   const { appStatus, SpamMails } = useContext(MailContext);

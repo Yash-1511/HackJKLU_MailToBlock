@@ -1,4 +1,4 @@
-![Logo](/ethereum.png)
+![Logo](./screenshots/logo.png)
 
 # Demo
 ### [🚀 ViewDemo](https://eth-marketplace-one.vercel.app/)
@@ -15,6 +15,7 @@
 - using ipfs and filecoin to store data
 - Spam email detection with Artificial Intelligence
 - Deploy machine learning model using docker image via github actions
+- CI/CD Pipeline
 - Mails are store in the Blockchain
 
 ## Tech Stack
@@ -67,9 +68,6 @@ If you have any feedback, please reach out to us LinkedIn profile below here.
 
 ## Screenshots
 
-![App Screenshot1](./demo1.png)
-![App Screenshot2](./demo2.png)
-![App Screenshot3](./demo3.png)
-![App Screenshot4](./demo4.png)
-![App Screenshot4](./demo5.png)
-![App Screenshot4](./demo6.png)
+![App Screenshot1](./screenshots/s1.png)
+![App Screenshot2](./screenshots/s2.png)
+![App Screenshot3](./screenshots/s3.png)

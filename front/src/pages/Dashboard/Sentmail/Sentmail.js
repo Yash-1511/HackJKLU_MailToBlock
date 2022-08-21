@@ -1,10 +1,8 @@
 import React, { useContext } from 'react'
-import { Link } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
 import { MailContext } from '../../../context/MailContext';
 import { convertTodate } from '../../../Utils/converttime';
 import { shortenAddress } from '../../../Utils/shortenaddress';
-import Skeleton from 'react-loading-skeleton'
 import 'react-loading-skeleton/dist/skeleton.css'
 export const SentMail = () => {
   const { appStatus, SentEmails } = useContext(MailContext);

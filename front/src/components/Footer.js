@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import logo from "../images/logo2.png"
 const Footer = () => {
     return (
@@ -8,9 +9,9 @@ const Footer = () => {
                     <div className="a9 a1t ac[-16px]">
                         <div className="a8 lg:a1K/12 2xl:a1L/12 ae">
                             <div className="a1M">
-                                <a href="/" className="a1N a1O h-10 w-auto">
+                                <Link to="/" className="a1N a1O h-10 w-auto">
                                     <img src={logo} alt="logo" className="ag a1P" />
-                                </a>
+                                </Link>
                                 <p className="aG a1g a1B">
                                     © 2022 Mail in The Block
                                 </p>

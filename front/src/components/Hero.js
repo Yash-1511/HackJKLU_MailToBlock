@@ -33,7 +33,7 @@ const Hero = () => {
                   md:a1D
                   a1g a3l a2c
                 ">
-                                   Dmail Network is a Web 3.0-based collaborative platform which integrates the functions of message communication, asset management, data storage, workspace and etc.
+                                   MailToBlock is a Web 3.0-based collaborative platform which integrates the functions of message communication, asset management, data storage, workspace and etc.
                                 </p>
                                 <div className="a9 aa a1Y">
                                 <button

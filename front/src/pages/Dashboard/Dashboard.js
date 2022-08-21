@@ -17,8 +17,6 @@ const Dashboard = () => {
     const { appStatus } = useContext(MailContext);
     let navigate = useNavigate();
     let location= useLocation();
-    var a = window.location.href;
-    const slug= a.substring(a.indexOf('?') + 1);
     return (
         <>
          {
